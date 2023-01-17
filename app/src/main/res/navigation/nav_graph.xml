@@ -12,10 +12,16 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_forgotFragment4"
-            app:destination="@id/forgotFragment4" />
+            app:destination="@id/forgotFragment4">
+
+        </action>
     </fragment>
     <fragment
         android:id="@+id/forgotFragment4"
         android:name="com.example.practiceapp2.ForgotFragment"
-        android:label="ForgotFragment" />
+        android:label="ForgotFragment" >
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
 </navigation>
